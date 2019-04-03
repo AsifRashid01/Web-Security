@@ -30,6 +30,9 @@ Time spent: **12** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.6
   - [ ] GIF Walkthrough: 
+  
+    ![](XSS_image.gif)
+  
   - [ ] Steps to recreate: Create a new media post and upload an image with the following filename format:
   
     ```
@@ -44,6 +47,9 @@ Time spent: **12** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.7.3
   - [ ] GIF Walkthrough: 
+  
+    ![](XSS_page.gif)
+  
   - [ ] Steps to recreate: Create a new page and input the following code in the content:
     
     ```
