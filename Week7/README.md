@@ -21,13 +21,18 @@ Time spent: **X** hours spent in total
   When user hovers over the text, the injected code will execute.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+2. (Required) WordPress 2.5-4.6 - Authenticated Stored Cross-Site Scripting via Image Filename
+  - [ ] Summary: This vulnerability allows attackers to upload an image with an infected filename. This abuses the insufficient validation of the file names of uploaded images. 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.6
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+  - [ ] Steps to recreate: Create a new media post and upload an image with the following filename format:
+  
+    ```
+    filename<img src=a onerror=alert(1)>.png
+    ```
+    The injected code is executed when the attachment page is viewed.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
