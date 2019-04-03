@@ -12,6 +12,9 @@ Time spent: **12** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.3
   - [ ] GIF Walkthrough: 
+  
+    ![](XSS_hover.gif)
+  
   - [ ] Steps to recreate: Create a post and enter the following script in the content: 
   
   ```
