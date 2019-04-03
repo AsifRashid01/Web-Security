@@ -7,15 +7,15 @@ Time spent: **12** hours spent in total
 ## Pentesting Report
 
 1. (Required) WordPress <= 4.3 - Authenticated Shortcode Tags Cross-Site Scripting (XSS)
-  - [ ] Summary: An Cross Site Scripting (XSS) vulnerability that allows malicious script tags to be put in the HTML body and be executed. This can be done by abusing the way unclosed HTML elements during the processing of shortcode tags are mishandled. In this example, when user hovers over the infected HTML, an alert window appears.
+  - [x] Summary: An Cross Site Scripting (XSS) vulnerability that allows malicious script tags to be put in the HTML body and be executed. This can be done by abusing the way unclosed HTML elements during the processing of shortcode tags are mishandled. In this example, when user hovers over the infected HTML, an alert window appears.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.3
-  - [ ] GIF Walkthrough: 
+  - [x] GIF Walkthrough: 
   
     ![](XSS_hover.gif)
   
-  - [ ] Steps to recreate: Create a post and enter the following script in the content: 
+  - [x] Steps to recreate: Create a post and enter the following script in the content: 
   
   ```
     [caption width="3" caption='<a href="' ">]</a><a href="http://onmouseover='alert(1)'"<XSS!</a>
@@ -25,15 +25,15 @@ Time spent: **12** hours spent in total
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 2. (Required) WordPress 2.5-4.6 - Authenticated Stored Cross-Site Scripting via Image Filename
-  - [ ] Summary: This vulnerability allows attackers to upload an image with an infected filename. This abuses the insufficient validation of the file names of uploaded images. 
+  - [x] Summary: This vulnerability allows attackers to upload an image with an infected filename. This abuses the insufficient validation of the file names of uploaded images. 
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.6
-  - [ ] GIF Walkthrough: 
+  - [x] GIF Walkthrough: 
   
     ![](XSS_image.gif)
   
-  - [ ] Steps to recreate: Create a new media post and upload an image with the following filename format:
+  - [x] Steps to recreate: Create a new media post and upload an image with the following filename format:
   
     ```
     filename<img src=a onerror=alert(1)>.png
@@ -42,15 +42,15 @@ Time spent: **12** hours spent in total
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 3. (Required) WordPress 4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
-  - [ ] Summary: This vulnerablity allows remote attackers to inject arbitrary web script or HTML via video URL in YouTube emebeds. In this example, infected code executes when the page is rendered.
+  - [x] Summary: This vulnerablity allows remote attackers to inject arbitrary web script or HTML via video URL in YouTube emebeds. In this example, infected code executes when the page is rendered.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.7.3
-  - [ ] GIF Walkthrough: 
+  - [x] GIF Walkthrough: 
   
     ![](XSS_page.gif)
   
-  - [ ] Steps to recreate: Create a new page and input the following code in the content:
+  - [x] Steps to recreate: Create a new page and input the following code in the content:
     
     ```
     [embed src='https://youtube.com/embed/12345\x3csvg onload=alert(1)\x3e'][/embed]
@@ -58,15 +58,15 @@ Time spent: **12** hours spent in total
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 4. (Optional) WordPress 4.2 - User Enumeration
-  - [ ] Summary: This exploit allows an attacker to enumerate through a list of usernames. Since the design allows a user to know if the username is invalid or not, an attacker can brute force user combinations.
+  - [x] Summary: This exploit allows an attacker to enumerate through a list of usernames. Since the design allows a user to know if the username is invalid or not, an attacker can brute force user combinations.
     - Vulnerability types: SQL Injection (User authentication)
     - Tested in version: 4.2
     - Fixed in version:
-  - [ ] GIF Walkthrough: 
+  - [x] GIF Walkthrough: 
   
     ![](User_Enumeration.gif)
   
-  - [ ] Steps to recreate: Type in usernames in the username field and through the validation error use sql injection to brute force username combinations
+  - [x] Steps to recreate: Type in usernames in the username field and through the validation error use sql injection to brute force username combinations
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
