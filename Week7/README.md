@@ -1,1 +1,1 @@
-Week 7-8 Assignment
+Week 7 & 8 Project
