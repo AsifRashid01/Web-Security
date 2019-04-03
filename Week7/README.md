@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: **12** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -48,13 +48,13 @@ Time spent: **X** hours spent in total
     ```
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+4. (Optional) WordPress 4.2 - User Enumeration
+  - [ ] Summary: This exploit allows an attacker to enumerate through a list of usernames. Since the design allows a user to know if the username is invalid or not, an attacker can brute force user combinations.
+    - Vulnerability types: SQL Injection (User authentication)
+    - Tested in version: 4.2
+    - Fixed in version:
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+  - [ ] Steps to recreate: Type in usernames in the username field and through the validation error use sql injection to brute force username combinations
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
