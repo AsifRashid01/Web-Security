@@ -39,8 +39,7 @@ Time spent: **12** hours spent in total
     filename<img src=a onerror=alert(1)>.png
     ```
     The injected code is executed when the attachment page is viewed.
-  - [x] Affected source code:  https://core.trac.wordpress.org/browser/branches/4.1/src/wp-includes/media.php
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [x] Affected source code:  https://core.trac.wordpress.org/browser/branches/4.2/src/wp-includes/media.php
 3. (Required) WordPress 4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
   - [x] Summary: This vulnerablity allows remote attackers to inject arbitrary web script or HTML via video URL in YouTube emebeds. In this example, infected code executes when the page is rendered.
     - Vulnerability types: XSS
@@ -55,8 +54,7 @@ Time spent: **12** hours spent in total
     ```
     [embed src='https://youtube.com/embed/12345\x3csvg onload=alert(1)\x3e'][/embed]
     ```
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [x] Affected source code:  https://core.trac.wordpress.org/browser/branches/4.1/src/wp-includes/media.php
 4. (Optional) WordPress 4.2 - User Enumeration
   - [x] Summary: This exploit allows an attacker to enumerate through a list of usernames. Since the design allows a user to know if the username is invalid or not, an attacker can brute force user combinations.
     - Vulnerability types: SQL Injection (User authentication)
