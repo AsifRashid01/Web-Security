@@ -22,8 +22,7 @@ Time spent: **12** hours spent in total
   
   ```
   When user hovers over the text, the injected code will execute.
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [x] Affected source code:  https://core.trac.wordpress.org/browser/branches/4.1/src/wp-includes/media.php
 2. (Required) WordPress 2.5-4.6 - Authenticated Stored Cross-Site Scripting via Image Filename
   - [x] Summary: This vulnerability allows attackers to upload an image with an infected filename. This abuses the insufficient validation of the file names of uploaded images. 
     - Vulnerability types: XSS
@@ -70,7 +69,7 @@ Time spent: **12** hours spent in total
 
 ## Assets
 
-List any additional assets, such as scripts or files
+Three gifs are added in the folder
 
 ## Resources
 
@@ -81,7 +80,6 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while doing the work
 
 ## License
 
