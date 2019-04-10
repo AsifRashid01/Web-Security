@@ -18,21 +18,33 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: **SQL Injection (SQLi)**
 
+![](Blue_sql_injection.gif)
+
 Vulnerability #2: **Session Hijacking/fixation**
+
+![](Blue_session_hijacking_fixation.gif)
 
 
 ## Green
 
 Vulnerability #1: **User Enumeration**
 
+![](Green_user_enum.gif)
+
 Vulnerability #2: **Cross-Site Scripting (XSS)**
+
+![](Green_XSS.gif)
 
 
 ## Red
 
 Vulnerability #1: **Insecure Direct Object Reference (IDOR)**
 
+![](Red_idor.gif)
+
 Vulnerability #2: **Cross-Site Request Forgery (CSRF)**
+
+![](Red_csrf.gif)
 
 
 ## Notes
