@@ -1,5 +1,6 @@
 **Honeypots Deployed:**
 
+![Sensors](sensors.PNG)
 
 
 **Issues Encountered:**
